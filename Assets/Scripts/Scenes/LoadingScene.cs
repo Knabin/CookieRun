@@ -18,7 +18,6 @@ public class LoadingScene : BaseScene
 
         SceneType = Define.Scene.LoadingScene;
         LoadingSlider = LoadingArea.GetComponentInChildren<Slider>();
-        Debug.Log(LoadingSlider);
         
         AudioClip clip = GetComponent<AudioSource>().clip;
         Managers.Sound.Play(clip);
