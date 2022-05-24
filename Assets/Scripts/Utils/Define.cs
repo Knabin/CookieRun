@@ -11,4 +11,11 @@ public class Define
         LobbyScene,
         GameScene,
     }
+
+    public enum Sound
+    {
+        Bgm,
+        Effect,
+        MaxCount,
+    }
 }

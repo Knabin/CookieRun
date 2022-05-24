@@ -9,9 +9,11 @@ public class Managers : MonoBehaviour
 
     // TODO :
     // Manager
-    SceneManagerEx _scene = new SceneManagerEx();
+    SceneManagerEx  _scene = new SceneManagerEx();
+    SoundManager    _sound = new SoundManager();
 
     public static SceneManagerEx Scene { get { return Instance._scene; } }
+    public static SoundManager Sound { get { return Instance._sound; } }
 
     void Start()
     {
@@ -41,11 +43,13 @@ public class Managers : MonoBehaviour
 
             // TODO :
             // 각 Manager들의 Init을 호출한다.
+            Sound.Init();
         }
     }
 
     public static void Clear()
     {
         Scene.Clear();
+        Sound.Clear();
     }
 }
