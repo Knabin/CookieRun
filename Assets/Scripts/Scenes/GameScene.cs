@@ -32,4 +32,9 @@ public class GameScene : BaseScene
     {
         Debug.Log("GameScene Clear!");
     }
+
+    public void Test()
+    {
+        Debug.Log("Hello!");
+    }
 }

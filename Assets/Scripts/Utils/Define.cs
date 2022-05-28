@@ -18,4 +18,12 @@ public class Define
         Effect,
         MaxCount,
     }
+
+	public enum UIEvent
+	{
+		Click,
+		Drag,
+		PointerDown,
+		PointerUp,
+	}
 }

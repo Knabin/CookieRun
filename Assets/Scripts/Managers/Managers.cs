@@ -7,13 +7,15 @@ public class Managers : MonoBehaviour
     static Managers staticInstance;
     static Managers Instance { get { Init(); return staticInstance; } }
 
-    // TODO :
-    // Manager
+    GameManager     _game = new GameManager();
     SceneManagerEx  _scene = new SceneManagerEx();
     SoundManager    _sound = new SoundManager();
+    UIManager       _ui = new UIManager();
 
+    public static GameManager Game { get { return Instance._game; }}
     public static SceneManagerEx Scene { get { return Instance._scene; } }
     public static SoundManager Sound { get { return Instance._sound; } }
+    public static UIManager UI { get { return Instance._ui; } }
 
     void Start()
     {
@@ -27,7 +29,7 @@ public class Managers : MonoBehaviour
 
     static void Init()
     {
-        if(staticInstance == null)
+        if (staticInstance == null)
         {
             GameObject go = GameObject.Find("@Managers");
 
@@ -51,5 +53,6 @@ public class Managers : MonoBehaviour
     {
         Scene.Clear();
         Sound.Clear();
+        UI.Clear();
     }
 }
