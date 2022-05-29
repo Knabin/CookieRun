@@ -1006,6 +1006,7 @@ GameObject:
   - component: {fileID: 1224477017}
   - component: {fileID: 1224477020}
   - component: {fileID: 1224477021}
+  - component: {fileID: 1224477022}
   m_Layer: 0
   m_Name: cookie0001_run01
   m_TagString: Untagged
@@ -1144,6 +1145,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1224477022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224477016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b236c7a303847f43b6aafff1824f359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Test:
+    g_InspectorKeys: 00000000
+    g_InspectorValues:
+    - g_InspectorKeys:
+      - {fileID: 0}
+      g_InspectorValues:
+      - {fileID: 22100000, guid: f012346666811884b8847830b3e827f9, type: 2}
 --- !u!1 &1505190775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6326845053665426416, guid: 74d37f85b94c3464fa2ae1cd804ef008, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6326845053665426420, guid: 74d37f85b94c3464fa2ae1cd804ef008, type: 3}
       propertyPath: m_Pivot.x
@@ -1855,6 +1875,10 @@ PrefabInstance:
     - target: {fileID: 6326845053665426420, guid: 74d37f85b94c3464fa2ae1cd804ef008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326845054464415464, guid: 74d37f85b94c3464fa2ae1cd804ef008, type: 3}
+      propertyPath: m_Name
+      value: BalloonText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74d37f85b94c3464fa2ae1cd804ef008, type: 3}

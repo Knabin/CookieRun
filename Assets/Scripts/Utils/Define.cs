@@ -26,4 +26,10 @@ public class Define
 		PointerDown,
 		PointerUp,
 	}
+
+    public enum CookieType
+    {
+        Brave,
+        
+    }
 }
