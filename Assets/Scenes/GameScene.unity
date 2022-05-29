@@ -883,6 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartUI: {fileID: 2133996627}
+  ResultUI: {fileID: 562875253}
 --- !u!4 &1192578638
 Transform:
   m_ObjectHideFlags: 0
@@ -1157,13 +1158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b236c7a303847f43b6aafff1824f359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Test:
+  CookieAnimators:
     g_InspectorKeys: 00000000
     g_InspectorValues:
-    - g_InspectorKeys:
-      - {fileID: 0}
-      g_InspectorValues:
-      - {fileID: 22100000, guid: f012346666811884b8847830b3e827f9, type: 2}
+    - {fileID: 22100000, guid: f012346666811884b8847830b3e827f9, type: 2}
 --- !u!1 &1505190775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,5 +2027,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3439194883408991717, guid: 2abaaad93069e2d4681724611180503f, type: 3}
+    - {fileID: 5385501290278862546, guid: 2abaaad93069e2d4681724611180503f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2abaaad93069e2d4681724611180503f, type: 3}

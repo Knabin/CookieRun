@@ -6,27 +6,9 @@ using UnityEngine;
 public class ChangeCookie : MonoBehaviour
 {
     [System.Serializable]
-    public class SerializeDicEntity : CustomDic.SerializableDictionary<Define.CookieType, SerializeDicSub>
+    public class SerializeDicCookie : CustomDic.SerializableDictionary<Define.CookieType, AnimatorOverrideController>
     {
     }
 
-    [System.Serializable]
-    public class SerializeDicSub : CustomDic.SerializableDictionary<BaseCookie, AnimatorOverrideController>
-    {
-
-    }
-
-    public SerializeDicEntity Test;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public SerializeDicCookie CookieAnimators;
 }

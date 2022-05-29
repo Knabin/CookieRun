@@ -30,5 +30,10 @@ public class GameManager
         
     }
 
+    // TODO :
+    // 여기서 게임 시작할 때
+    // Change를 해 주면서
+    // 그 쿠키에 해당하는 Component를 동적으로 붙여 주고
+    // 이거를 로딩할 때 진행해 주면 될 것 같음!
 
 }

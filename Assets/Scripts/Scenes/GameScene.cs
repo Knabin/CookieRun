@@ -6,6 +6,8 @@ public class GameScene : BaseScene
 {
     [SerializeField]
     GameObject StartUI;
+    [SerializeField]
+    GameObject ResultUI;
 
     void Start()
     {
@@ -15,6 +17,8 @@ public class GameScene : BaseScene
 
         AudioClip clip = GetComponent<AudioSource>().clip;
         Managers.Sound.Play(clip);
+
+        ResultUI.SetActive(false);
 
         // TODO :
         // 맵 로드가 끝나면 UI 끄고, 게임 시작 처리
