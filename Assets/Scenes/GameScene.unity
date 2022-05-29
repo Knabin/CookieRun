@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 1060226139}
   - component: {fileID: 1060226143}
   m_Layer: 0
-  m_Name: Background_Effect
+  m_Name: BackgroundEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
