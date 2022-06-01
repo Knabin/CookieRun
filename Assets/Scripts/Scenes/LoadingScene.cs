@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using BackEnd;
 
 public class LoadingScene : BaseScene
 {
@@ -45,9 +46,7 @@ public class LoadingScene : BaseScene
     }
 
     IEnumerator StartLoading() {
-        // TODO :
-        // Something to do 
-        // ex) 서버 연결, 애셋 번들 다운 등
+        InitServer();
         yield return new WaitForSeconds(4f);
         StartCoroutine(TestFunction());
     }
@@ -69,5 +68,24 @@ public class LoadingScene : BaseScene
         if (LoadingSlider) {
             LoadingSlider.value += value;
         }
+    }
+
+    void InitServer() {
+        var be = Backend.Initialize(true);
+        if(be.IsSuccess())
+        {
+            Debug.Log("성공!");
+
+            BackendReturnObject bro = Backend.BMember.GuestLogin( "게스트 로그인으로 로그인함" );
+            if(bro.IsSuccess())
+            {
+                Debug.Log("게스트 로그인에 성공했습니다");
+            }
+        }
+        else
+        {
+            // TODO :
+            // 초기화 실패 시 alert 처리?
+        } 
     }
 }
